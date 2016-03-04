@@ -11,7 +11,7 @@ NpmInstallPlugin.prototype.apply = function(compiler) {
   compiler.plugin("normal-module-factory", this.listenToFactory);
 
   // Install loaders on demand
-  compiler.resolvers.loader.plugin("module", this.resolveLoader.bind(this));
+  // compiler.resolvers.loader.plugin("module", this.resolveLoader.bind(this));
 
   // Install project dependencies on demand
   compiler.resolvers.normal.plugin("module", this.resolveModule.bind(this));

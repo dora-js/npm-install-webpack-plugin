@@ -1,5 +1,5 @@
 {
-  "name": "npm-install-webpack-plugin",
+  "name": "npm-install-webpack-plugin-cn",
   "version": "2.0.2",
   "description": "Webpack loader to automatically npm install & save dependencies.",
   "main": "index.js",
@@ -34,7 +34,8 @@
   "homepage": "https://github.com/ericclemmons/npm-install-webpack-plugin#readme",
   "dependencies": {
     "cross-spawn": "^2.1.4",
-    "lodash.kebabcase": "^3.1.0"
+    "lodash.kebabcase": "^3.1.0",
+    "which": "^1.2.4"
   },
   "devDependencies": {
     "coveralls": "^2.11.6",
