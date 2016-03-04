@@ -38,7 +38,8 @@ NpmInstallPlugin.prototype.resolve = function(request) {
 
 NpmInstallPlugin.prototype.resolveModule = function(result, next) {
   // Only install direct dependencies, not sub-dependencies
-  if (!result.path.match("node_modules")) {
+  if (!result.path.match("node_modules") && result.request.indexOf('webpack-hot-middleware') !== 0) {
+    console.log(result.request);
     this.resolve(result.request);
   }
 
